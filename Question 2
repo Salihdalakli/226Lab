@@ -1,0 +1,8 @@
+import math
+
+term = lambda x, n: ((-1) ** n) * (x ** (2 * n + 1)) / factorial(2 * n + 1)
+
+def sine_x(x, n):
+    x = math.radians(x)
+    result = sum(term(x, i) for i in range(n))
+    return result
