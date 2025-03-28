@@ -1,0 +1,8 @@
+total = 0
+
+def recursive_function(n):
+    global total
+    if n == 0:
+        return
+    total += n
+    recursive_function(n - 1)
