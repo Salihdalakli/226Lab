@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int recursive_function() {
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+    if (n == 0)
+        return 0;
+    return n + recursive_function(n - 1);
+}
+
+int main() {
+    cout << "Result: " << recursive_function() << endl;
+    return 0;
+}
